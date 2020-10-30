@@ -52,7 +52,7 @@
                 android:gravity="center"
                 android:text="@string/edit_profile_desc"
                 android:textColor="#FFF"
-                android:textSize="20sp"
+                android:textSize="@dimen/lable"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -125,7 +125,7 @@
                         android:layout_marginBottom="12dp"
                         android:fontFamily="@font/mlight"
                         android:text="@string/name"
-                        android:textSize="20sp" />
+                        android:textSize="@dimen/lable" />
 
                     <EditText
                         android:id="@+id/xnama_lengkap"
@@ -154,7 +154,7 @@
                         android:layout_marginBottom="12dp"
                         android:fontFamily="@font/mlight"
                         android:text="@string/bio"
-                        android:textSize="20sp" />
+                        android:textSize="@dimen/lable" />
 
                     <EditText
                         android:id="@+id/xbio"
@@ -183,7 +183,7 @@
                         android:layout_marginBottom="12dp"
                         android:fontFamily="@font/mlight"
                         android:text="@string/username"
-                        android:textSize="20sp" />
+                        android:textSize="@dimen/lable" />
 
                     <EditText
                         android:id="@+id/xusername"
@@ -211,7 +211,7 @@
                         android:layout_marginBottom="12dp"
                         android:fontFamily="@font/mlight"
                         android:text="@string/password"
-                        android:textSize="20sp" />
+                        android:textSize="@dimen/lable"/>
 
                     <EditText
                         android:id="@+id/xpassword"
@@ -240,7 +240,7 @@
                         android:layout_marginBottom="12dp"
                         android:fontFamily="@font/mlight"
                         android:text="@string/email_address"
-                        android:textSize="20sp" />
+                        android:textSize="@dimen/lable" />
 
                     <EditText
                         android:id="@+id/xemail_address"
@@ -280,7 +280,7 @@
                     android:orientation="vertical">
 
                     <LinearLayout
-                        android:id="@+id/back_myprofile"
+                        android:id="@+id/back"
                         android:layout_width="match_parent"
                         android:layout_height="55dp"
                         android:background="@drawable/bg_layout_white"
@@ -305,23 +305,13 @@
 
                     <Button
                         android:id="@+id/btn_save"
-                        android:layout_width="match_parent"
-                        android:layout_height="55dp"
-                        android:background="@drawable/bg_btn_blue_primary"
-                        android:fontFamily="@font/mmedium"
+                        style="@style/btn_blue_primary_one"
                         android:layout_marginLeft="16dp"
-                        android:text="@string/save_profile"
-                        android:textColor="#FFF"
-                        android:textSize="20sp"/>
+                        android:text="@string/save_profile"/>
 
                 </LinearLayout>
 
-
             </LinearLayout>
-
-
-
-
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

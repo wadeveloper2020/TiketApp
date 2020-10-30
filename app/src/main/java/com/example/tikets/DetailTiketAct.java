@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -23,6 +24,7 @@ public class DetailTiketAct extends AppCompatActivity {
     TextView title_ticket, location_ticket,
             photo_spot_ticket, wifi_ticket,
             festival_ticket, short_desc_ticket;
+    LinearLayout btn_back;
     ImageView header_ticket_detail;
 
     DatabaseReference reference;
@@ -41,6 +43,7 @@ public class DetailTiketAct extends AppCompatActivity {
         festival_ticket = findViewById(R.id.festival_ticket);
         short_desc_ticket = findViewById(R.id.short_desc_ticket);
         header_ticket_detail = findViewById(R.id.header_ticket_detail);
+        btn_back = findViewById(R.id.back);
 
         //mengambil data dari intent
         Bundle bundle = getIntent().getExtras();
@@ -76,6 +79,12 @@ public class DetailTiketAct extends AppCompatActivity {
                 Intent intent = new Intent(DetailTiketAct.this, CheckoutAct.class);
                 intent.putExtra("jenis_ticket",jenis_tiket);
                 startActivity(intent);
+            }
+        });
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
             }
         });
     }

@@ -39,7 +39,7 @@
         android:gravity="center"
         android:text="@string/info_lable"
         android:textColor="#FFF"
-        android:textSize="20sp"
+        android:textSize="@dimen/lable"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -76,7 +76,7 @@
                 android:layout_marginBottom="12dp"
                 android:fontFamily="@font/mlight"
                 android:text="@string/username"
-                android:textSize="20sp" />
+                android:textSize="@dimen/lable" />
 
             <EditText
                 android:id="@+id/username"
@@ -104,7 +104,7 @@
                 android:layout_marginBottom="12dp"
                 android:fontFamily="@font/mlight"
                 android:text="@string/password"
-                android:textSize="20sp" />
+                android:textSize="@dimen/lable"/>
 
             <EditText
                 android:id="@+id/password"
@@ -133,7 +133,7 @@
                 android:layout_marginBottom="12dp"
                 android:fontFamily="@font/mlight"
                 android:text="@string/email_address"
-                android:textSize="20sp" />
+                android:textSize="@dimen/lable" />
 
             <EditText
                 android:id="@+id/email_address"
@@ -172,9 +172,7 @@
 
             <LinearLayout
                 android:id="@+id/back"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:background="@drawable/bg_layout_white"
+                style="@style/btn_white_secondary"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -195,14 +193,9 @@
 
             <Button
                 android:id="@+id/btn_continue"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
+                style="@style/btn_blue_primary_one"
                 android:layout_marginLeft="16dp"
-                android:background="@drawable/bg_btn_blue_primary"
-                android:fontFamily="@font/mmedium"
-                android:text="@string/register_one"
-                android:textColor="#FFF"
-                android:textSize="20sp"/>
+                android:text="@string/register_one"/>
 
         </LinearLayout>
 

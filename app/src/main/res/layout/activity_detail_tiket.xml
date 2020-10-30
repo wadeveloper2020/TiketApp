@@ -75,12 +75,12 @@
                 android:fontFamily="@font/mregular"
                 android:textColor="@color/BlackPrimary"
                 android:text="Information"
-                android:textSize="20sp" />
+                android:textSize="@dimen/lable" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16dp"
+                android:textSize="@dimen/desc"
                 android:textColor="@color/GrayPrimary"
                 android:fontFamily="@font/mlight"
                 android:text="Knowing before travel"/>
@@ -125,7 +125,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/GrayPrimary"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/desc"
                     android:fontFamily="@font/mlight"
                     android:text="Tripod Everywhere"/>
 
@@ -164,7 +164,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/GrayPrimary"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/desc"
                     android:fontFamily="@font/mlight"
                     android:text="Connect for any tourist"/>
 
@@ -203,7 +203,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/GrayPrimary"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/desc"
                     android:fontFamily="@font/mlight"
                     android:text="Dance and Foods"/>
 
@@ -246,9 +246,7 @@
 
             <LinearLayout
                 android:id="@+id/back"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:background="@drawable/bg_layout_white"
+                style="@style/btn_white_secondary"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -270,14 +268,9 @@
 
             <Button
                 android:id="@+id/btn_bay_tiket"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
+                style="@style/btn_blue_primary_one"
                 android:layout_marginLeft="16dp"
-                android:background="@drawable/bg_btn_blue_primary"
-                android:fontFamily="@font/mmedium"
-                android:text="@string/buy_tiket"
-                android:textColor="#FFF"
-                android:textSize="20sp" />
+                android:text="@string/buy_tiket"/>
 
         </LinearLayout>
 

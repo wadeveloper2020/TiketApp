@@ -118,7 +118,7 @@
                 android:fontFamily="@font/mregular"
                 android:text="My Tiket"
                 android:textColor="@color/BlackPrimary"
-                android:textSize="20sp" />
+                android:textSize="@dimen/lable"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -126,7 +126,7 @@
                 android:fontFamily="@font/mlight"
                 android:text="Explore the beauty of world"
                 android:textColor="@color/GrayPrimary"
-                android:textSize="16dp" />
+                android:textSize="@dimen/desc" />
 
             <View
                 android:layout_width="match_parent"
@@ -147,38 +147,28 @@
 
     <Button
         android:id="@+id/btn_edit"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
+        style="@style/btn_blue_primary_two"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:background="@drawable/bg_btn_blue_primary"
-        android:fontFamily="@font/mmedium"
         android:text="@string/edit_profile"
-        android:textColor="#FFF"
-        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <Button
         android:id="@+id/btn_sign_out"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
+        style="@style/btn_white_primary"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:background="@drawable/bg_btn_white_primary"
-        android:fontFamily="@font/mmedium"
         android:text="@string/sign_out"
-        android:textColor="@color/GrayPrimary"
-        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_edit" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -85,7 +85,7 @@
                 android:layout_marginTop="42dp"
                 android:fontFamily="@font/mmedium"
                 android:textColor="#FFF"
-                android:textSize="20sp"
+                android:textSize="@dimen/lable"
                 app:layout_constraintStart_toEndOf="@+id/view_edit"
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -98,7 +98,7 @@
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/mlight"
                 android:textColor="#FFF"
-                android:textSize="16sp"
+                android:textSize="@dimen/desc"
                 app:layout_constraintStart_toEndOf="@+id/view_edit"
                 app:layout_constraintTop_toBottomOf="@+id/nama_lengkap" />
 
@@ -146,7 +146,7 @@
                         android:fontFamily="@font/mregular"
                         android:text="@string/main_menus"
                         android:textColor="@color/BlackPrimary"
-                        android:textSize="20sp" />
+                        android:textSize="@dimen/lable" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -155,7 +155,7 @@
                         android:fontFamily="@font/mlight"
                         android:text="Explore the beauty of world"
                         android:textColor="@color/GrayPrimary"
-                        android:textSize="16sp" />
+                        android:textSize="@dimen/desc" />
 
                     <View
                         android:layout_width="match_parent"
@@ -193,7 +193,7 @@
                             android:paddingTop="8dp"
                             android:text="Pisa"
                             android:textColor="@color/BlackPrimary"
-                            android:textSize="16dp" />
+                            android:textSize="@dimen/desc" />
 
                     </LinearLayout>
 
@@ -218,7 +218,7 @@
                             android:paddingTop="8dp"
                             android:text="Torri"
                             android:textColor="@color/BlackPrimary"
-                            android:textSize="16dp" />
+                            android:textSize="@dimen/desc" />
 
                     </LinearLayout>
 
@@ -243,7 +243,7 @@
                             android:paddingTop="8dp"
                             android:text="Pagoda"
                             android:textColor="@color/BlackPrimary"
-                            android:textSize="16dp" />
+                            android:textSize="@dimen/desc" />
 
                     </LinearLayout>
 
@@ -277,7 +277,7 @@
                             android:paddingTop="8dp"
                             android:text="Candi"
                             android:textColor="@color/BlackPrimary"
-                            android:textSize="16dp" />
+                            android:textSize="@dimen/desc" />
 
                     </LinearLayout>
 
@@ -302,7 +302,7 @@
                             android:paddingTop="8dp"
                             android:text="Sphinx"
                             android:textColor="@color/BlackPrimary"
-                            android:textSize="16dp" />
+                            android:textSize="@dimen/desc" />
 
                     </LinearLayout>
 
@@ -327,7 +327,7 @@
                             android:paddingTop="8dp"
                             android:text="Monas"
                             android:textColor="@color/BlackPrimary"
-                            android:textSize="16dp" />
+                            android:textSize="@dimen/desc" />
 
                     </LinearLayout>
 
@@ -345,7 +345,7 @@
                 android:fontFamily="@font/mregular"
                 android:text="TicketTips"
                 android:textColor="@color/BlackPrimary"
-                android:textSize="20sp"
+                android:textSize="@dimen/lable"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -359,7 +359,7 @@
                 android:fontFamily="@font/mlight"
                 android:text="Learn it for many benefits"
                 android:textColor="@color/GrayPrimary"
-                android:textSize="16sp"
+                android:textSize="@dimen/desc"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
 

@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -25,6 +26,7 @@ public class CheckoutAct extends AppCompatActivity {
     Button btn_pay_now;
     ImageView btnminus, btnplus, notis;
     TextView textjumlahtiket, textmybalace, texttotalharga, nama_wisata, lokasi, ketentuan;
+    LinearLayout btn_back;
     Integer valuejumlahtiket = 1;
     Integer valuetextmybalance = 0;
     Integer hargatiket = 75;
@@ -59,6 +61,7 @@ public class CheckoutAct extends AppCompatActivity {
         textmybalace = findViewById(R.id.textmybalance);
         texttotalharga = findViewById(R.id.texttotalharga);
         notis = findViewById(R.id.notis);
+        btn_back = findViewById(R.id.back);
 
         nama_wisata = findViewById(R.id.nama_wisata);
         lokasi = findViewById(R.id.lokasi);
@@ -194,6 +197,13 @@ public class CheckoutAct extends AppCompatActivity {
 
                     }
                 });
+            }
+        });
+
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
             }
         });
 

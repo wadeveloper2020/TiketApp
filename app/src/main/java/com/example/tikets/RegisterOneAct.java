@@ -21,7 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 public class RegisterOneAct extends AppCompatActivity {
 
     Button btn_continue;
-    LinearLayout back;
+    LinearLayout btn_back;
     EditText username, password, email_address;
 
     String USERNAME_KEY = "usernamekey";
@@ -35,7 +35,7 @@ public class RegisterOneAct extends AppCompatActivity {
         setContentView(R.layout.activity_register_one);
 
         btn_continue = findViewById(R.id.btn_continue);
-        back = findViewById(R.id.back);
+        btn_back = findViewById(R.id.back);
 
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
@@ -101,11 +101,10 @@ public class RegisterOneAct extends AppCompatActivity {
             }
         });
 
-        back.setOnClickListener(new View.OnClickListener() {
+        btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RegisterOneAct.this, SignInAct.class);
-                startActivity(intent);
+                onBackPressed();
             }
         });
     }

@@ -63,7 +63,7 @@ public class EditProfileAct extends AppCompatActivity {
 
         btn_save = findViewById(R.id.btn_save);
         btn_add_photo_new = findViewById(R.id.btn_add_photo_new);
-        btn_back = findViewById(R.id.back_myprofile);
+        btn_back = findViewById(R.id.back);
 
         reference = FirebaseDatabase.getInstance().getReference().child("Users").child(username_key_new);
         reference.addValueEventListener(new ValueEventListener() {
@@ -118,6 +118,7 @@ public class EditProfileAct extends AppCompatActivity {
                             .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                                 @Override
                                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+
                                     Task<Uri> uriTask=taskSnapshot.getMetadata().getReference().getDownloadUrl();                                               while(!uriTask.isSuccessful());
                                     Uri downloadUri=uriTask.getResult();
                                     final String download_url=downloadUri.toString();
@@ -141,6 +142,13 @@ public class EditProfileAct extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 findPhoto();
+            }
+        });
+
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
             }
         });
     }

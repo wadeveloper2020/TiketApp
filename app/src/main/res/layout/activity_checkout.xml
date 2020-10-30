@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:fontFamily="@font/mregular"
-        android:text="Bay Tiket"
+        android:text="@string/title_bay_tiket"
         android:textColor="#FFF"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,17 +61,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:fontFamily="@font/mregular"
-                android:text="Information"
+                android:text="@string/lable_info_bay_tiket"
                 android:textColor="@color/BlackPrimary"
-                android:textSize="20sp" />
+                android:textSize="@dimen/lable" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/mlight"
-                android:text="Knowing before travel"
+                android:text="@string/desc_bay_ticket"
                 android:textColor="@color/GrayPrimary"
-                android:textSize="16dp" />
+                android:textSize="@dimen/desc" />
 
             <View
                 android:layout_width="match_parent"
@@ -207,9 +207,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:fontFamily="@font/mregular"
-                android:text="Pricing"
+                android:text="@string/lable_pricing_bay_tiket"
                 android:textColor="@color/BlackPrimary"
-                android:textSize="20sp" />
+                android:textSize="@dimen/lable" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -221,9 +221,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/mlight"
-                    android:text="Your current balance is"
+                    android:text="@string/desc_bay_ticket_price"
                     android:textColor="@color/GrayPrimary"
-                    android:textSize="16dp"
+                    android:textSize="@dimen/desc"
                     android:layout_marginRight="12dp"/>
 
                 <TextView
@@ -302,9 +302,7 @@
 
             <LinearLayout
                 android:id="@+id/back"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:background="@drawable/bg_layout_white"
+                style="@style/btn_white_secondary"
                 android:gravity="center">
 
                 <ImageView
@@ -325,13 +323,9 @@
 
             <Button
                 android:id="@+id/btn_pay_now"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:background="@drawable/bg_btn_green_primary"
-                android:fontFamily="@font/mmedium"
-                android:text="@string/pay_now"
-                android:textColor="#FFF"
-                android:textSize="20sp" />
+                style="@style/btn_green_primary"
+                android:text="@string/pay_now" />
+
         </LinearLayout>
 
     </LinearLayout>

@@ -35,4 +35,9 @@
     <string name="refund_now">REFUND NOW</string>
     <string name="edit_profile_desc">We highly suggest you to \nuse the correct informations</string>
     <string name="save_profile">SAVE PROFILE</string>
+    <string name="title_bay_tiket">Bay Ticket</string>
+    <string name="lable_info_bay_tiket">Information</string>
+    <string name="lable_pricing_bay_tiket">Pricing</string>
+    <string name="desc_bay_ticket">Knowing before travel</string>
+    <string name="desc_bay_ticket_price">Your current balance is</string>
 </resources>

@@ -28,7 +28,7 @@ import com.squareup.picasso.Picasso;
 
 public class RegisterTwoAct extends AppCompatActivity {
 
-    LinearLayout back;
+    LinearLayout btn_back;
     Button btn_register_two, btn_add_photo;
     ImageView icon_nopic;
     EditText nama_lengkap, bio;
@@ -50,7 +50,7 @@ public class RegisterTwoAct extends AppCompatActivity {
 
         getUserNameLokal();
 
-        back = findViewById(R.id.back);
+        btn_back = findViewById(R.id.back);
         btn_register_two = findViewById(R.id.btn_register_two);
         btn_add_photo = findViewById(R.id.btn_add_photo);
         icon_nopic = findViewById(R.id.pic_photo_register_user);
@@ -104,11 +104,10 @@ public class RegisterTwoAct extends AppCompatActivity {
                 }
             }
         });
-        back.setOnClickListener(new View.OnClickListener() {
+        btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RegisterTwoAct.this, RegisterOneAct.class);
-                startActivity(intent);
+                onBackPressed();
             }
         });
 

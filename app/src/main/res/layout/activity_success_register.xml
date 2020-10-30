@@ -44,25 +44,16 @@
         android:gravity="center"
         android:text="@string/sukses_label"
         android:textColor="@color/GrayPrimary"
-        android:textSize="20sp"
+        android:textSize="@dimen/lable"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/app_title" />
 
     <Button
         android:id="@+id/btn_success_register"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
+        style="@style/btn_blue_primary_two"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
-        android:background="@drawable/bg_btn_blue_primary"
-        android:fontFamily="@font/mmedium"
         android:text="@string/explore_now"
-        android:textColor="#FFF"
-        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/app_subtitle" />

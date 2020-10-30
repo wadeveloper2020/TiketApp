@@ -18,7 +18,7 @@ import com.google.firebase.database.ValueEventListener;
 public class MyTicketDetailAct extends AppCompatActivity {
 
     TextView xnama_wisata, xlokasi, xdate_wisata, xtime_wisata, xketentuan;
-    LinearLayout back_myprofile;
+    LinearLayout btn_back;
 
     DatabaseReference reference;
 
@@ -33,7 +33,7 @@ public class MyTicketDetailAct extends AppCompatActivity {
         xtime_wisata = findViewById(R.id.xtime_wisata);
         xketentuan = findViewById(R.id.xketentuan);
 
-        back_myprofile = findViewById(R.id.back_myprofile);
+        btn_back = findViewById(R.id.back);
 
         Bundle bundle = getIntent().getExtras();
         final String nama_wisata_baru = bundle.getString("nama_wisata");
@@ -56,11 +56,10 @@ public class MyTicketDetailAct extends AppCompatActivity {
             }
         });
 
-        back_myprofile.setOnClickListener(new View.OnClickListener() {
+        btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyTicketDetailAct.this, MyProfileAct.class);
-                startActivity(intent);
+                onBackPressed();
             }
         });
 

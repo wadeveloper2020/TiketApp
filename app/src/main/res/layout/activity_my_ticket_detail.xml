@@ -82,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/mlight"
                     android:textColor="@color/GrayPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/desc" />
 
             </LinearLayout>
 
@@ -98,7 +98,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="@dimen/lable"
             android:textColor="@color/BlackPrimary"
             android:fontFamily="@font/mregular"
             android:text="@string/date"
@@ -109,7 +109,7 @@
             android:id="@+id/xdate_wisata"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="@dimen/desc"
             android:textColor="@color/GrayPrimary"
             android:fontFamily="@font/mlight"
             android:layout_marginLeft="24dp"
@@ -118,7 +118,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="@dimen/lable"
             android:textColor="@color/BlackPrimary"
             android:fontFamily="@font/mregular"
             android:text="@string/time"
@@ -129,7 +129,7 @@
             android:id="@+id/xtime_wisata"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="@dimen/desc"
             android:textColor="@color/GrayPrimary"
             android:fontFamily="@font/mlight"
             android:layout_marginLeft="24dp"
@@ -138,7 +138,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="@dimen/lable"
             android:textColor="@color/BlackPrimary"
             android:fontFamily="@font/mregular"
             android:text="@string/information"
@@ -149,7 +149,7 @@
             android:id="@+id/xketentuan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="@dimen/desc"
             android:textColor="@color/GrayPrimary"
             android:fontFamily="@font/mlight"
             android:lineSpacingExtra="6dp"
@@ -187,10 +187,8 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/back_myprofile"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:background="@drawable/bg_layout_white"
+                android:id="@+id/back"
+                style="@style/btn_white_secondary"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -211,14 +209,9 @@
 
             <Button
                 android:id="@+id/btn_continue"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
+                style="@style/btn_green_primary"
                 android:layout_marginLeft="16dp"
-                android:background="@drawable/bg_btn_green_primary"
-                android:fontFamily="@font/mmedium"
-                android:text="@string/refund_now"
-                android:textColor="#FFF"
-                android:textSize="20sp"/>
+                android:text="@string/refund_now"/>
 
         </LinearLayout>
 
