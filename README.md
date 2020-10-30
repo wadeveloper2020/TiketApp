@@ -1,2 +1,2 @@
 # TiketApp
-Aplikasi android menggunakan java dan xml dengan firebase sebagai database center.
+Aplikasi android pemesanan tiket wisata menggunakan java dan xml dengan firebase sebagai database center.
