@@ -92,13 +92,14 @@
                         android:layout_width="90dp"
                         android:layout_height="90dp">
                         <ImageView
-                            android:id="@+id/user_photo_profile"
+                            android:id="@+id/photo_edit_profile"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
                             android:src="@drawable/icon_nopic" />
                     </com.github.florent37.shapeofview.shapes.CircleView>
 
                     <Button
+                        android:id="@+id/btn_add_photo_new"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:background="@drawable/bg_add_profile"
