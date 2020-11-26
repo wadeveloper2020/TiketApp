@@ -170,7 +170,7 @@ public class CheckoutAct extends AppCompatActivity {
                         reference3.getRef().child("time_wisata").setValue(time_wisata);
                         reference3.getRef().child("jumlah_tiket").setValue(valuejumlahtiket.toString());
 
-                        Intent intent = new Intent(CheckoutAct.this, SuccessTiketAct.class);
+                        Intent intent = new Intent(CheckoutAct.this, PaymentListAct.class);
                         intent.putExtra("jenis_ticket","myticket");
                         startActivity(intent);
                     }

@@ -48,6 +48,7 @@ public class TiketAdapter extends RecyclerView.Adapter<TiketAdapter.MyViewHolder
 
             }
         });
+
     }
 
     @Override

@@ -173,7 +173,7 @@
                     android:weightSum="3">
 
                     <LinearLayout
-                        android:id="@+id/btn_ticket_pisa"
+                        android:id="@+id/btn_ticket_cangkuang"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -184,21 +184,21 @@
                         <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
-                            android:src="@drawable/icon_pisa" />
+                            android:src="@drawable/cangkuang" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/mregular"
                             android:paddingTop="8dp"
-                            android:text="Pisa"
+                            android:text="Cangkuang"
                             android:textColor="@color/BlackPrimary"
                             android:textSize="@dimen/desc" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/btn_ticket_torri"
+                        android:id="@+id/btn_ticket_papandayan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -209,21 +209,21 @@
                         <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
-                            android:src="@drawable/icon_torri" />
+                            android:src="@drawable/papandayan" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/mregular"
                             android:paddingTop="8dp"
-                            android:text="Torri"
+                            android:text="Papandayan"
                             android:textColor="@color/BlackPrimary"
                             android:textSize="@dimen/desc" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/btn_ticket_pagoda"
+                        android:id="@+id/btn_ticket_darajat"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -234,14 +234,14 @@
                         <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
-                            android:src="@drawable/icon_pagoda" />
+                            android:src="@drawable/darajat" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/mregular"
                             android:paddingTop="8dp"
-                            android:text="Pagoda"
+                            android:text="Darajat"
                             android:textColor="@color/BlackPrimary"
                             android:textSize="@dimen/desc" />
 
@@ -257,7 +257,7 @@
                     android:weightSum="3">
 
                     <LinearLayout
-                        android:id="@+id/btn_ticket_candi"
+                        android:id="@+id/btn_ticket_bagendit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -268,21 +268,21 @@
                         <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
-                            android:src="@drawable/icon_borobudur" />
+                            android:src="@drawable/bagendit" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/mregular"
                             android:paddingTop="8dp"
-                            android:text="Candi"
+                            android:text="Bagendit"
                             android:textColor="@color/BlackPrimary"
                             android:textSize="@dimen/desc" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/btn_ticket_sphinx"
+                        android:id="@+id/btn_ticket_sanghyang"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -293,21 +293,21 @@
                         <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
-                            android:src="@drawable/icon_sphinx" />
+                            android:src="@drawable/sanghyang" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/mregular"
                             android:paddingTop="8dp"
-                            android:text="Sphinx"
+                            android:text="Sanghyang"
                             android:textColor="@color/BlackPrimary"
                             android:textSize="@dimen/desc" />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/btn_ticket_monas"
+                        android:id="@+id/btn_ticket_santolo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -318,14 +318,14 @@
                         <ImageView
                             android:layout_width="64dp"
                             android:layout_height="64dp"
-                            android:src="@drawable/icon_monas" />
+                            android:src="@drawable/santolo" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/mregular"
                             android:paddingTop="8dp"
-                            android:text="Monas"
+                            android:text="Santolo"
                             android:textColor="@color/BlackPrimary"
                             android:textSize="@dimen/desc" />
 
@@ -380,28 +380,39 @@
                     android:padding="8dp">
 
                     <ImageView
+                        android:id="@+id/img_papandayan"
                         android:layout_width="250dp"
                         android:layout_height="120dp"
                         android:layout_marginRight="24dp"
-                        android:src="@drawable/item_one" />
+                        android:src="@drawable/item_two"/>
 
                     <ImageView
+                        android:id="@+id/img_darajat"
                         android:layout_width="250dp"
                         android:layout_height="120dp"
                         android:layout_marginRight="24dp"
-                        android:src="@drawable/item_two" />
+                        android:src="@drawable/item_one"/>
 
                     <ImageView
+                        android:id="@+id/img_bagendit"
                         android:layout_width="250dp"
                         android:layout_height="120dp"
                         android:layout_marginRight="24dp"
-                        android:src="@drawable/item_one" />
+                        android:src="@drawable/item_two"/>
 
                     <ImageView
+                        android:id="@+id/img_sanghyang"
                         android:layout_width="250dp"
                         android:layout_height="120dp"
                         android:layout_marginRight="24dp"
-                        android:src="@drawable/item_two" />
+                        android:src="@drawable/item_one"/>
+
+                    <ImageView
+                        android:id="@+id/img_santolo"
+                        android:layout_width="250dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/item_two"/>
 
                 </LinearLayout>
 

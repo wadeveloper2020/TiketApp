@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tikets">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,14 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PaymentListAct"></activity>
-        <activity android:name=".PaymentAct" />
+        <activity android:name=".WebsiteAct"></activity>
+        <activity android:name=".DetailTiketsAct" />
+        <activity android:name=".PaymentListAct" />
         <activity android:name=".MyTicketDetailAct" />
         <activity android:name=".MyProfileAct" />
         <activity android:name=".EditProfileAct" />
         <activity android:name=".SuccessTiketAct" />
         <activity android:name=".CheckoutAct" />
-        <activity android:name=".DetailTiketAct" />
         <activity android:name=".HomeScreenAct" />
         <activity android:name=".SuccessRegisterAct" />
         <activity android:name=".RegisterTwoAct" />

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_primary"
-    tools:context=".RegisterOneAct">
+    tools:context=".DetailTiketsAct">
 
     <ImageView
         android:id="@+id/header_ticket_detail"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/title_ticket"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
@@ -40,7 +40,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_ticket" />
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
 
     <LinearLayout
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:background="@drawable/bg_layout_white"
@@ -57,7 +57,7 @@
         android:paddingTop="30dp"
         android:paddingBottom="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/location_ticket">
 
@@ -73,139 +73,141 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:fontFamily="@font/mregular"
-                android:textColor="@color/BlackPrimary"
                 android:text="Information"
+                android:textColor="@color/BlackPrimary"
                 android:textSize="@dimen/lable" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/desc"
-                android:textColor="@color/GrayPrimary"
                 android:fontFamily="@font/mlight"
-                android:text="Knowing before travel"/>
+                android:text="Knowing before travel"
+                android:textColor="@color/GrayPrimary"
+                android:textSize="@dimen/desc" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="12dp"
-                android:background="#EDEDED"/>
+                android:background="#EDEDED" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="horizontal"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginRight="24dp"
-            android:layout_marginTop="16dp">
-            
+            android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="55dp"
                 android:layout_height="55dp"
-                android:src="@drawable/ic_photo"/>
+                android:src="@drawable/ic_photo" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_marginLeft="12dp"
                 android:layout_marginTop="4dp"
-                android:layout_marginLeft="12dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/photo_spot_ticket"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
+                    android:fontFamily="@font/mregular"
                     android:textColor="@color/BlackPrimary"
-                    android:fontFamily="@font/mregular"/>
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/GrayPrimary"
-                    android:textSize="@dimen/desc"
                     android:fontFamily="@font/mlight"
-                    android:text="Tripod Everywhere"/>
+                    android:text="Tripod Everywhere"
+                    android:textColor="@color/GrayPrimary"
+                    android:textSize="@dimen/desc" />
 
             </LinearLayout>
-            
+
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="horizontal"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginRight="24dp"
-            android:layout_marginTop="16dp">
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="55dp"
                 android:layout_height="55dp"
-                android:src="@drawable/icon_wifi"/>
+                android:src="@drawable/icon_wifi" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_marginLeft="12dp"
                 android:layout_marginTop="4dp"
-                android:layout_marginLeft="12dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/wifi_ticket"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
+                    android:fontFamily="@font/mregular"
                     android:textColor="@color/BlackPrimary"
-                    android:fontFamily="@font/mregular"/>
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/GrayPrimary"
-                    android:textSize="@dimen/desc"
                     android:fontFamily="@font/mlight"
-                    android:text="Connect for any tourist"/>
+                    android:text="Connect for any tourist"
+                    android:textColor="@color/GrayPrimary"
+                    android:textSize="@dimen/desc" />
 
             </LinearLayout>
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="horizontal"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginRight="24dp"
-            android:layout_marginTop="16dp">
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="55dp"
                 android:layout_height="55dp"
-                android:src="@drawable/icon_festival"/>
+                android:src="@drawable/icon_festival" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_marginLeft="12dp"
                 android:layout_marginTop="4dp"
-                android:layout_marginLeft="12dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/festival_ticket"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
+                    android:fontFamily="@font/mregular"
                     android:textColor="@color/BlackPrimary"
-                    android:fontFamily="@font/mregular"/>
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/GrayPrimary"
-                    android:textSize="@dimen/desc"
                     android:fontFamily="@font/mlight"
-                    android:text="Dance and Foods"/>
+                    android:text="Dance and Foods"
+                    android:textColor="@color/GrayPrimary"
+                    android:textSize="@dimen/desc" />
 
             </LinearLayout>
 
@@ -215,12 +217,12 @@
             android:id="@+id/short_desc_ticket"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:fontFamily="@font/mlight"
-            android:textColor="@color/GrayPrimary"
             android:layout_marginLeft="24dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/mlight"
             android:lineSpacingExtra="8dp"
-            android:layout_marginTop="12dp"/>
+            android:textColor="@color/GrayPrimary"
+            android:textSize="16dp" />
 
     </LinearLayout>
 
@@ -276,12 +278,5 @@
 
 
     </LinearLayout>
-
-
-
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

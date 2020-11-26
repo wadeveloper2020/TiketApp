@@ -234,7 +234,7 @@
                     android:textSize="16sp"
                     android:layout_weight="1"
                     android:fontFamily="@font/mregular"
-                    android:text="US$ 329"/>
+                    android:text="Rp. 329"/>
 
                 <ImageView
                     android:id="@+id/notis"
@@ -260,7 +260,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/mlight"
-                    android:text="Total Price"
+                    android:text="Total Harga"
                     android:textColor="@color/GrayPrimary"
                     android:textSize="18sp"
                     android:layout_marginRight="32dp"/>
@@ -272,7 +272,7 @@
                     android:textColor="@color/green_primary"
                     android:textSize="30sp"
                     android:fontFamily="@font/mregular"
-                    android:text="US$ 200"/>
+                    android:text="Rp. 200"/>
 
             </LinearLayout>
 

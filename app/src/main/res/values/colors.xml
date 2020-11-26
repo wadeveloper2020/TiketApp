@@ -4,11 +4,13 @@
     <color name="colorPrimaryDark">#203DD1</color>
     <color name="colorAccent">#03DAC5</color>
 
-    <color name="BluePrimary">#203DD1</color>
-    <color name="BlueSecondary">#2595F5</color>
+    <color name="BluePrimary">#EE8326</color>
+    <color name="BlueSecondary">#F9C430</color>
     <color name="GrayPrimary">#8D8D8D</color>
 
     <color name="BlackPrimary">#21272C</color>
     <color name="bg_primary">#EDF1F8</color>
     <color name="green_primary">#3AC2A9</color>
 </resources>
+
+

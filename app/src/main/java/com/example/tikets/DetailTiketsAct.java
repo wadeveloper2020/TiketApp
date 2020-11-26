@@ -18,7 +18,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
-public class DetailTiketAct extends AppCompatActivity {
+public class DetailTiketsAct extends AppCompatActivity {
 
     Button btn_buy_tiket;
     TextView title_ticket, location_ticket,
@@ -27,16 +27,16 @@ public class DetailTiketAct extends AppCompatActivity {
     LinearLayout btn_back;
     ImageView header_ticket_detail;
 
-    DatabaseReference reference;
+    DatabaseReference reference1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_tiket);
+        setContentView(R.layout.activity_detail_tikets);
 
         btn_buy_tiket = findViewById(R.id.btn_bay_tiket);
 
-        title_ticket = findViewById(R.id.title_ticket);
+        title_ticket = findViewById(R.id.title);
         location_ticket = findViewById(R.id.location_ticket);
         photo_spot_ticket = findViewById(R.id.photo_spot_ticket);
         wifi_ticket = findViewById(R.id.wifi_ticket);
@@ -50,9 +50,9 @@ public class DetailTiketAct extends AppCompatActivity {
         final String jenis_tiket = bundle.getString("jenis_ticket");
 
         //mengambil data dari firebase
-        reference = FirebaseDatabase.getInstance().getReference().child("Wisata").child(jenis_tiket);
+        reference1 = FirebaseDatabase.getInstance().getReference().child("Wisata").child(jenis_tiket);
 
-        reference.addListenerForSingleValueEvent(new ValueEventListener() {
+        reference1.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
@@ -76,7 +76,7 @@ public class DetailTiketAct extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(DetailTiketAct.this, CheckoutAct.class);
+                Intent intent = new Intent(DetailTiketsAct.this, CheckoutAct.class);
                 intent.putExtra("jenis_ticket",jenis_tiket);
                 startActivity(intent);
             }

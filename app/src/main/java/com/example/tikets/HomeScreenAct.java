@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -21,9 +23,16 @@ import com.squareup.picasso.Picasso;
 
 public class HomeScreenAct extends AppCompatActivity {
 
-    LinearLayout btn_ticket_pisa, btn_ticket_torri, btn_ticket_pagoda, btn_ticket_candi, btn_ticket_sphinx, btn_ticket_monas;
+    LinearLayout btn_ticket_cangkuang, btn_ticket_papandayan, btn_ticket_darajat,
+                 btn_ticket_bagendit, btn_ticket_sanghyang, btn_ticket_santolo;
+
     CircleView to_profile;
     ImageView photo_home_user;
+//    WebView img_cangkuang, img_papandayan;
+//            //img_darajat, img_bagendit, img_sanghyang, img_santolo;
+
+    WebView webView;
+
     TextView nama_lengkap, bio, user_balance;
 
     String USERNAME_KEY = "usernamekey";
@@ -39,12 +48,20 @@ public class HomeScreenAct extends AppCompatActivity {
 
         getUserNameLokal();
 
-        btn_ticket_pisa =  findViewById(R.id.btn_ticket_pisa);
-        btn_ticket_torri =  findViewById(R.id.btn_ticket_torri);
-        btn_ticket_pagoda =  findViewById(R.id.btn_ticket_pagoda);
-        btn_ticket_candi =  findViewById(R.id.btn_ticket_candi);
-        btn_ticket_sphinx =  findViewById(R.id.btn_ticket_sphinx);
-        btn_ticket_monas =  findViewById(R.id.btn_ticket_monas);
+        btn_ticket_cangkuang =  findViewById(R.id.btn_ticket_cangkuang);
+        btn_ticket_papandayan =  findViewById(R.id.btn_ticket_papandayan);
+        btn_ticket_darajat =  findViewById(R.id.btn_ticket_darajat);
+        btn_ticket_bagendit =  findViewById(R.id.btn_ticket_bagendit);
+        btn_ticket_sanghyang =  findViewById(R.id.btn_ticket_sanghyang);
+        btn_ticket_santolo =  findViewById(R.id.btn_ticket_santolo);
+
+//        img_cangkuang = findViewById(R.id.img_cangkuang);
+//        img_papandayan = findViewById(R.id.img_papandayan);
+//        img_darajat = findViewById(R.id.img_darajat);
+//        img_bagendit = findViewById(R.id.img_bagendit);
+//        img_sanghyang = findViewById(R.id.img_sanghyang);
+//        img_santolo = findViewById(R.id.img_santolo);
+//        webView = findViewById(R.id.webview);
 
         to_profile = findViewById(R.id.to_profile);
         photo_home_user = findViewById(R.id.photo_home_user);
@@ -74,64 +91,64 @@ public class HomeScreenAct extends AppCompatActivity {
         });
 
 
-        
-        btn_ticket_pisa.setOnClickListener(new View.OnClickListener() {
+
+        btn_ticket_cangkuang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 //mengirim data dengan intent
-                Intent intent = new Intent(HomeScreenAct.this, DetailTiketAct.class);
-                intent.putExtra("jenis_ticket","Pisa");
+                Intent intent = new Intent(HomeScreenAct.this, DetailTiketsAct.class);
+                intent.putExtra("jenis_ticket","Cangkuang");
                 startActivity(intent);
             }
         });
 
-        btn_ticket_torri.setOnClickListener(new View.OnClickListener() {
+        btn_ticket_papandayan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(HomeScreenAct.this, DetailTiketAct.class);
-                intent.putExtra("jenis_ticket","Torri");
+                Intent intent = new Intent(HomeScreenAct.this, DetailTiketsAct.class);
+                intent.putExtra("jenis_ticket","Papandayan");
                 startActivity(intent);
             }
         });
 
-        btn_ticket_pagoda.setOnClickListener(new View.OnClickListener() {
+        btn_ticket_darajat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(HomeScreenAct.this, DetailTiketAct.class);
-                intent.putExtra("jenis_ticket","Pagoda");
+                Intent intent = new Intent(HomeScreenAct.this, DetailTiketsAct.class);
+                intent.putExtra("jenis_ticket","Darajat");
                 startActivity(intent);
             }
         });
 
-        btn_ticket_candi.setOnClickListener(new View.OnClickListener() {
+        btn_ticket_bagendit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(HomeScreenAct.this, DetailTiketAct.class);
-                intent.putExtra("jenis_ticket","Candi");
+                Intent intent = new Intent(HomeScreenAct.this, DetailTiketsAct.class);
+                intent.putExtra("jenis_ticket","Bagendit");
                 startActivity(intent);
             }
         });
 
-        btn_ticket_sphinx.setOnClickListener(new View.OnClickListener() {
+        btn_ticket_sanghyang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(HomeScreenAct.this, DetailTiketAct.class);
-                intent.putExtra("jenis_ticket","Sphinx");
+                Intent intent = new Intent(HomeScreenAct.this, DetailTiketsAct.class);
+                intent.putExtra("jenis_ticket","Sanghyang");
                 startActivity(intent);
             }
         });
 
-        btn_ticket_monas.setOnClickListener(new View.OnClickListener() {
+        btn_ticket_santolo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(HomeScreenAct.this, DetailTiketAct.class);
-                intent.putExtra("jenis_ticket","Monas");
+                Intent intent = new Intent(HomeScreenAct.this, DetailTiketsAct.class);
+                intent.putExtra("jenis_ticket","Santolo");
                 startActivity(intent);
             }
         });
@@ -144,10 +161,10 @@ public class HomeScreenAct extends AppCompatActivity {
             }
         });
 
-
     }
     public void getUserNameLokal(){
         SharedPreferences sharedPreferences = getSharedPreferences(USERNAME_KEY, MODE_PRIVATE);
         username_key_new = sharedPreferences.getString(username_key,"");
     }
+
 }

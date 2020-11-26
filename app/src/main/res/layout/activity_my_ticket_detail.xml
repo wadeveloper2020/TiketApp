@@ -101,6 +101,26 @@
             android:textSize="@dimen/lable"
             android:textColor="@color/BlackPrimary"
             android:fontFamily="@font/mregular"
+            android:text="@string/noreg"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/xnoreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/desc"
+            android:textColor="@color/GrayPrimary"
+            android:fontFamily="@font/mlight"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/lable"
+            android:textColor="@color/BlackPrimary"
+            android:fontFamily="@font/mregular"
             android:text="@string/date"
             android:layout_marginLeft="24dp"
             android:layout_marginTop="20dp"/>
@@ -135,33 +155,96 @@
             android:layout_marginLeft="24dp"
             android:layout_marginTop="4dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/lable"
-            android:textColor="@color/BlackPrimary"
-            android:fontFamily="@font/mregular"
-            android:text="@string/information"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="20dp"/>
-
-        <TextView
-            android:id="@+id/xketentuan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/desc"
-            android:textColor="@color/GrayPrimary"
-            android:fontFamily="@font/mlight"
-            android:lineSpacingExtra="6dp"
+            android:orientation="horizontal"
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
-            android:layout_marginTop="4dp"/>
+            android:layout_marginTop="16dp">
 
-        <ImageView
-            android:layout_width="224dp"
-            android:layout_height="51dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/lable"
+                android:textColor="@color/BlackPrimary"
+                android:fontFamily="@font/mregular"
+                android:text="@string/total_biaya_tiket"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/desc"
+                android:textColor="@color/BluePrimary"
+                android:textAlignment="textEnd"
+                android:text="Rp. 2.500"
+                android:fontFamily="@font/mregular"
+                android:lineSpacingExtra="6dp"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/lable"
+                android:textColor="@color/BlackPrimary"
+                android:fontFamily="@font/mregular"
+                android:text="@string/biaya_penanganan"/>
+
+            <TextView
+                android:id="@+id/xbiaya_penanganan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/desc"
+                android:textColor="@color/BluePrimary"
+                android:textAlignment="textEnd"
+                android:text="Rp. 2.500"
+                android:fontFamily="@font/mregular"
+                android:lineSpacingExtra="6dp"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/lable"
+                android:fontFamily="@font/mregular"
+                android:text="Total Bayar :"
+                android:textColor="@color/BlackPrimary"/>
+
+            <TextView
+                android:id="@+id/texttotalharga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green_primary"
+                android:textSize="30sp"
+                android:fontFamily="@font/mregular"
+                android:text="Rp. 200"
+                android:textAlignment="textEnd"
+                android:gravity="end"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -207,7 +290,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/btn_continue"
+                android:id="@+id/btn_lanjut_bayar"
                 style="@style/btn_green_primary"
                 android:layout_marginLeft="16dp"
                 android:text="@string/refund_now"/>
@@ -215,9 +298,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
